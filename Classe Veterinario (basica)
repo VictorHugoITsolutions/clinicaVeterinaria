@@ -1,0 +1,62 @@
+public class Veterinario
+{   
+ private String nome, endereco, cidade, estado, sexo;
+ private int telefone, convenio; 
+ //construtor parametrizado
+ public Veterinario(String nome1, String endereco1, String cidade1, String estado1, String sexo1, int telefone1, int convenio1){
+     setNome(nome1);
+     setEndereco(endereco1);
+     setCidade(cidade1);
+     setEstado(estado1);
+     setSexo(sexo1);
+     setTelefone(telefone1);
+     setConvenio(convenio1);
+    }
+ //todos os gets
+ public String getNome(){
+     return nome;
+    }
+ public String getEndereco(){
+     return endereco;
+    }
+ public int getTelefone(){
+     return telefone;
+    }
+ public int getConvenio(){
+     return convenio;
+    }
+ public String getSexo(){
+     return sexo;
+    }
+ public String getCidade(){
+     return cidade;
+    }   
+ //todos os sets
+ public void setNome(String nome1){
+     nome=nome1;
+    }
+ public void setEndereco(String endereco1){
+       endereco=endereco1;
+    }
+ public void setTelefone(int telefone1){
+       telefone=telefone1;
+    }
+ public void setConvenio(int convenio1){
+       convenio=convenio1;
+    }
+ public void setSexo(String sexo1){
+     sexo=sexo1;
+    }
+ public void setCidade(String cidade1){
+     cidade=cidade1;
+    }
+ public void setEstado(String estado1){
+     estado=estado1;
+    }
+ public String toString(){ 
+       //FALTA BOTAR PARA RETORNAR AS INFORMAÇÕES DA CLASSE BICHO
+       return "\n Nome: " + nome + " \n Endereço: " + endereco + "\n Telefone: " + telefone + "\n Convenio: " + convenio +
+       "\n Sexo: " + sexo + "\n Cidade: " + cidade + "\n Estado: " + estado;
+    }   
+ }
+
