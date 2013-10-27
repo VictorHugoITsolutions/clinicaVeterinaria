@@ -1,0 +1,42 @@
+public class Estimação
+{  private String nome_dono, endereco;
+   private int telefone, convenio;
+   //construtor parametrizado (problema em puxar os parametros da classe bicho para o construtos)
+   public Estimação(String nome_dono1, String endereco1, int telefone1, int convenio1){
+       setNome_dono(nome_dono1);
+       setEndereco(endereco1);
+       setTelefone(telefone1);
+       setConvenio(convenio1);
+    }
+   //todos os gets
+   public String getNome_dono(){
+       return nome_dono;
+    }
+   public String getEndereco(){
+       return endereco;
+    }
+   public int getTelefone(){
+       return telefone;
+    }
+   public int getConvenio(){
+       return convenio;
+    }
+   //todos os sets
+   public void setNome_dono(String nome_dono1){
+       nome_dono=nome_dono1;
+    }
+   public void setEndereco(String endereco1){
+       endereco=endereco1;
+    }
+   public void setTelefone(int telefone1){
+       telefone=telefone1;
+    }
+   public void setConvenio(int convenio1){
+       convenio=convenio1;
+    }
+   public String toString(){ 
+       //FALTA BOTAR PARA RETORNAR AS INFORMAÇÕES DA CLASSE BICHO
+       return "\n Nome do dono: " + nome_dono + " \n Endereço: " + endereco + "\n Telefone: " + telefone + "\n Convenio: " + convenio;
+    } 
+  }
+
