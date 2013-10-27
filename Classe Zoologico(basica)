@@ -1,0 +1,56 @@
+public class Zoologico
+{private String nomeDoZoologico, cidade, estado, pessoaContato;
+ private int telefone, convenio;  
+ //construtor parametrizado (problema em puxar os parametros da classe bicho para o construtor)
+ public Zoologico(String nomeDoZoologico1, String cidade1, String estado1, String pessoaContato1, int telefone1, int convenio1 ){
+     setNomeDoZoologico(nomeDoZoologico1);
+     setCidade(cidade1);
+     setEstado(estado1);
+     setPessoaContato(pessoaContato1);
+     setTelefone(telefone1);
+     setConvenio(convenio1);
+    }
+ //todos os gets
+ public String getNomeDoZoologico(){
+     return nomeDoZoologico;
+    }
+ public String getCidade(){
+     return cidade;
+    }
+ public String getEstado(){
+     return estado;
+    }
+  public String getPessoaContato(){
+     return pessoaContato;
+    }
+ public int getTelefone(){
+     return telefone;
+    }
+ public int getConvenio(){
+     return convenio;
+    }
+ //todos os sets
+ public void setConvenio(int convenio1){
+     convenio=convenio1;
+    }
+ public void setTelefone(int telefone1){
+     telefone=telefone1;
+    }
+ public void setPessoaContato(String pessoaContato1){
+     pessoaContato=pessoaContato1;
+    }
+ public void setEstado(String estado1){
+     estado=estado1;
+    }
+ public void setCidade(String cidade1){
+     cidade=cidade1;
+    }
+ public void setNomeDoZoologico(String nomeDoZoologico1){
+     nomeDoZoologico=nomeDoZoologico1;
+    }
+ public String ToString(){
+     //FALTA BOTAR PARA RETORNAR AS INFORMAÇÕES DA CLASSE BICHO
+     return "\n Nome do Zoologico: " + nomeDoZoologico + "\n Convenio: " + convenio + "\n Telefone: " + telefone + "\n Pessoa para contato: " + pessoaContato + "\n Estado: " + estado +
+     "\n Cidade: " + cidade;
+    }  
+}
