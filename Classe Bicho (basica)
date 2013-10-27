@@ -1,0 +1,39 @@
+public class Bicho
+{ private String nome, porte;
+  private int idade, tipo; 
+  //construtor parametrizado
+  public Bicho(String nome1, int idade1, int tipo1, String porte1){
+          setNome(nome1);
+          setIdade(idade1);
+          setPorte(porte1);
+          setTipo(tipo1);
+    }
+    //todos os sets
+  public void setNome(String nome1){
+         nome=nome1;
+    } 
+  public void setIdade(int idade1){
+        idade=idade1;
+    }
+  public void setPorte(String porte1){
+        porte=porte1;
+    }
+  public void setTipo(int tipo1){
+        tipo=tipo1;
+    }
+    //todos os gets
+    public String getNome(){
+       return nome;
+    }
+  public int getIdade(){
+       return idade;
+    }  
+  public int getTipo(){
+       return tipo;
+    }
+  public String getPorte(){
+      return porte;
+    }  
+  public String toString(){return "\n Nome: " + nome + "\n Idade: " + idade + "\n Porte: " + porte + "\n Tipo: " + tipo;}
+  }
+
