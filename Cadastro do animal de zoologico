@@ -1,0 +1,32 @@
+
+/**
+ * Write a description of class CadastrarZoologico here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+import java.util.ArrayList;
+import java.util.Scanner;
+public class CadastrarZoologico
+{ private Zoologico zoologico;
+  private Bicho bicho;  
+  public void CadastrarZoologico(){//pega as informações com o usuario, cria um bicho de zoologico e ja adiciona na lista de animais do zoologico
+      Scanner teclado=new Scanner(System.in);
+      System.out.println("\f");
+      System.out.println(" Digite o nome do zoologico");
+      String nomeDoZoologico1= teclado.nextLine();
+      System.out.println(" Digite a cidade do zoologico");
+      String cidade1=teclado.nextLine();
+      System.out.println(" Digite o estado do zoologico");
+      String estado1=teclado.nextLine();
+      System.out.println(" Digite uma pessoa para contato");
+      String pessoaContato1=teclado.nextLine();
+      System.out.println(" Digite um telefone para contato");
+      int telefone1=teclado.nextInt();
+      System.out.println(" Digite um convenio");
+      int convenio1=teclado.nextInt();
+      Zoologico zoologico=new Zoologico(nomeDoZoologico1, cidade1, estado1, pessoaContato1, telefone1, convenio1, bicho);
+      ArrayList<Zoologico> bichosDoZoologico = new ArrayList<Zoologico>();
+      bichosDoZoologico.add(zoologico);
+     }
+}
