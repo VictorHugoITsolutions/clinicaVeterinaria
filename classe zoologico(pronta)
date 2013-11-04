@@ -1,0 +1,66 @@
+
+/**
+ * Write a description of class Zoologico here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+
+public class Zoologico
+{private String nomeDoZoologico, cidade, estado, pessoaContato;
+ private int telefone, convenio;
+ private Bicho bicho;
+ //construtor parametrizado
+ public Zoologico(String nomeDoZoologico, String cidade, String estado, String pessoaContato, int telefone, int convenio, Bicho bicho ){
+     setNomeDoZoologico(nomeDoZoologico);
+     setCidade(cidade);
+     setEstado(estado);
+     setPessoaContato(pessoaContato);
+     setTelefone(telefone);
+     setConvenio(convenio);
+     this.bicho=bicho;     
+    }
+ //todos os gets
+ public String getNomeDoZoologico(){
+     return nomeDoZoologico;
+    }
+ public String getCidade(){
+     return cidade;
+    }
+ public String getEstado(){
+     return estado;
+    }
+  public String getPessoaContato(){
+     return pessoaContato;
+    }
+ public int getTelefone(){
+     return telefone;
+    }
+ public int getConvenio(){
+     return convenio;
+    }
+ //todos os sets
+ public void setConvenio(int convenio){
+     this.convenio=convenio;
+    }
+ public void setTelefone(int telefone){
+     this.telefone=telefone;
+    }
+ public void setPessoaContato(String pessoaContato){
+     this.pessoaContato=pessoaContato;
+    }
+ public void setEstado(String estado){
+     this.estado=estado;
+    }
+ public void setCidade(String cidade1){
+     cidade=cidade1;
+    }
+ public void setNomeDoZoologico(String nomeDoZoologico1){
+     nomeDoZoologico=nomeDoZoologico1;
+    }
+ public String ToString(){
+     //FALTA BOTAR PARA RETORNAR AS INFORMAÇÕES DA CLASSE BICHO
+     return "\n Nome do Zoologico: " + nomeDoZoologico + "\n Convenio: " + convenio + "\n Telefone: " + telefone + "\n Pessoa para contato: " + pessoaContato + "\n Estado: " + estado +
+     "\n Cidade: " + cidade;
+    }  
+}
