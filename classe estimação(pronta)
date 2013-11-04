@@ -1,0 +1,51 @@
+
+/**
+ * Write a description of class Estimação here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+
+public class Estimação
+{  private String nome_dono, endereco;
+   private int telefone, convenio;
+   private Bicho bicho;
+   //construtor parametrizado
+   public Estimação(String nome_dono, String endereco, int telefone, int convenio, Bicho bicho){
+       setNome_dono(nome_dono);
+       setEndereco(endereco);
+       setTelefone(telefone);
+       setConvenio(convenio);
+       this.bicho=bicho;       
+    }
+   //todos os gets
+   public String getNome_dono(){
+       return nome_dono;
+    }
+   public String getEndereco(){
+       return endereco;
+    }
+   public int getTelefone(){
+       return telefone;
+    }
+   public int getConvenio(){
+       return convenio;
+    }
+   //todos os sets
+   public void setNome_dono(String nome_dono){
+       this.nome_dono=nome_dono;
+    }
+   public void setEndereco(String endereco){
+       this.endereco=endereco;
+    }
+   public void setTelefone(int telefone){
+       this.telefone=telefone;
+    }
+   public void setConvenio(int convenio){
+       this.convenio=convenio;
+    }
+   public String toString(){ 
+       //FALTA BOTAR PARA RETORNAR AS INFORMAÇÕES DA CLASSE BICHO
+       return "\n Nome do dono: " + nome_dono + " \n Endereço: " + endereco + "\n Telefone: " + telefone + "\n Convenio: " + convenio;
+    } 
+  }
