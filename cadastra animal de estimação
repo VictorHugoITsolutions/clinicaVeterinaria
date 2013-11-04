@@ -1,0 +1,29 @@
+
+/**
+ * Write a description of class CadastrarEstimacao here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+import java.util.Scanner;
+import java.util.ArrayList;
+public class CadastrarEstimacao
+    {private Estimação estimacao;
+     private Bicho bicho;  
+     public void CadastrarEstimacao(){//pega as informações com o usuario, cria um bicho de estimação e ja adiciona na lista de animais de estimação
+      Scanner teclado=new Scanner(System.in);
+      System.out.println("\f");
+      System.out.println(" Digite o nome do dono");
+      String nome_dono1= teclado.nextLine();
+      System.out.println(" Digite um  endereço");
+      String endereco1=teclado.nextLine();
+      System.out.println(" Digite um telefone para contato");
+      int telefone1=teclado.nextInt();
+      System.out.println(" Digite um convenio");
+      int convenio1=teclado.nextInt();
+      Estimação estimacao=new Estimação(nome_dono1, endereco1, telefone1, convenio1, bicho);
+      ArrayList<Estimação> bichosDeEstimacao = new ArrayList<Estimação>();
+      bichosDeEstimacao.add(estimacao);
+     }
+
+}
