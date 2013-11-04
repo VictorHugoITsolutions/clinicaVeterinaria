@@ -1,0 +1,28 @@
+
+/**
+ * Write a description of class CadastrarOng here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+import java.util.Scanner;
+import java.util.ArrayList;
+public class CadastrarOng
+{ private BichoOng bichoOng;
+  private Bicho bicho;  
+  public void CadastrarOng(){//pega as informações com o usuario, cria um bicho da ong e ja adiciona na lista de animais da ong
+      Scanner teclado=new Scanner(System.in);
+      System.out.println("\f");
+      System.out.println(" Digite o nome da ong");
+      String nomeOng1= teclado.nextLine();
+      System.out.println(" Digite o nome de uma pessoa para contato");
+      String pessoaContato1=teclado.nextLine();
+      System.out.println(" Digite o tipo da ONG");
+      String tipoOng1=teclado.nextLine();
+      System.out.println(" Digite um telefone para contato");
+      int telefone1=teclado.nextInt();
+      BichoOng bichoOng=new BichoOng(nomeOng1, pessoaContato1, tipoOng1, telefone1, bicho);
+      ArrayList<BichoOng> bichosDaOng = new ArrayList<BichoOng>();
+      bichosDaOng.add(bichoOng);
+          }
+  }
