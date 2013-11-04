@@ -1,0 +1,53 @@
+
+/**
+ * Write a description of class BichoOng here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+
+public class BichoOng
+{
+   private String nomeOng, pessoaContato, tipoOng;
+   private int telefone;
+   private Bicho bicho;
+     //construtor parametrizado
+   public BichoOng(String nomeOng, String pessoaContato, String tipoOng, int telefone, Bicho bicho){
+       setNomeOng(nomeOng);
+       setPessoaContato(pessoaContato);
+       setTelefone(telefone);
+       setTipoOng(tipoOng);
+       this.bicho=bicho;        
+    }
+   //todos os gets
+   public String getNomeOng(){
+       return nomeOng;
+    }
+   public String getPessoaContato(){
+       return pessoaContato;
+    }
+   public int getTelefone(){
+       return telefone;
+    }
+   public String getTipoOng(){
+       return tipoOng;
+    }
+   //todos os sets
+   public void setNomeOng(String nomeOng){
+       this.nomeOng=nomeOng;
+    }
+   public void setPessoaContato(String pessoaContato){
+       this.pessoaContato=pessoaContato;
+    }
+   public void setTelefone(int telefone){
+       this.telefone=telefone;
+    }
+   public void setTipoOng(String tipoOng){
+       this.tipoOng=tipoOng;
+    }
+   public String toString(){ 
+       //FALTA BOTAR PARA RETORNAR AS INFORMAÇÕES DA CLASSE BICHO
+       return "\n Nome da ONG: " + nomeOng + "\n Telefone: " + telefone + "\n Pessoa para contato: " + pessoaContato +
+       "\n Tipo de ONG: ";
+    } 
+}
