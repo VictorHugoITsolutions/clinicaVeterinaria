@@ -1,0 +1,27 @@
+
+/**
+ * Write a description of class CadastrarAnimal here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+
+import java.util.Scanner;
+public class CadastrarAnimal
+{   private Bicho bicho;
+    public void cadastraAnimal(){
+        Scanner teclado=new Scanner(System.in);
+        System.out.println("\f");
+        System.out.println("Digite o nome do seu animal");
+        String nome1=teclado.nextLine();
+        System.out.println("Digite a idade do seu animal");
+        int idade1=teclado.nextInt();
+        System.out.println("Digite o tipo do seu animal");
+        int tipo1=teclado.nextInt();
+        System.out.println("Digite o porte do seu animal");
+        String porte1=teclado.nextLine();
+        System.out.println("Seu animal é ong, zoologico ou estimação?");
+        String classeDoAnimal=teclado.nextLine();
+        Bicho bicho=new Bicho(nome1, idade1, tipo1, porte1);
+        }
+}
